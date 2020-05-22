@@ -27,4 +27,10 @@ public class ArthasController {
         System.out.println(objectNode);
         return objectNode;
     }
+
+    @PostMapping("/invote")
+    public ObjectNode invote(@RequestBody ObjectNode objectNode){
+        System.out.println("invote");
+        return objectNode;
+    }
 }
