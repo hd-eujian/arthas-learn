@@ -15,8 +15,9 @@ public class ArthasController {
 
 
     @GetMapping("/a")
-    public String arthas(String a){
+    public String arthas(String a,String b){
         System.out.println(a);
+        System.out.println(b);
         return a;
     }
 
