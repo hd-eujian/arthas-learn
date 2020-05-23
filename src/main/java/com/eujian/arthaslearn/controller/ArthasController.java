@@ -19,12 +19,11 @@ public class ArthasController {
         return a;
     }
 
-    @PostMapping("/arthasPost")
-    public ObjectNode arthasPost(@RequestBody ObjectNode objectNode){
-        System.out.println(String.format("objectNode=%s",objectNode));
-        objectNode.put("a","q");
+    @GetMapping("/arthasTrace")
+    public String arthasTrace() throws InterruptedException {
+        Thread.sleep(100);
         new MyService().send();
-        return objectNode;
+        return "arthasTrace";
     }
 
     @PostMapping("/arthasInvote")
