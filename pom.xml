@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.eujian</groupId>
     <artifactId>arthas-learn</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>arthas-learn</name>
     <description>Arthas-learnproject for Spring Boot</description>
 
