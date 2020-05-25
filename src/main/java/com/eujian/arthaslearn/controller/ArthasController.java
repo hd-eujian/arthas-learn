@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ArthasController {
 
+    final MyService myService = new MyService();
 
     @GetMapping("/arthasGet")
     public String arthasGet(String a,String b){
@@ -22,7 +23,7 @@ public class ArthasController {
     @GetMapping("/arthasTrace")
     public String arthasTrace() throws InterruptedException {
         Thread.sleep(100);
-        new MyService().send();
+        myService.send();
         return "arthasTrace";
     }
 
